@@ -1,9 +1,10 @@
 #ifndef MBED_SHIFTREG_H
 #include "mbed.h"
 
+//블루투스 프로토콜 함수
 class BTSerial {
 private:
-    uint8_t sendBuf[7];
+    uint8_t sendBuf[8];
     void FillBigend (uint8_t *bufPointer, uint16_t data);
     uint16_t GetChecksum (uint8_t *bufPointer);
     void FillChecksum ();
@@ -19,7 +20,8 @@ public:
     void Back (uint16_t num);
     void Right (uint16_t num);
     void Left (uint16_t num);
-    void Stop ();
+    void End ();
+    void Start ();
 };
  
 #endif
