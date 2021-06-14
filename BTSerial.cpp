@@ -55,24 +55,33 @@ void BTSerial::SendCmd (uint8_t cmd)
     FillChecksum ();
     SendFunc ();
 }
+
 //CMD Method
 void BTSerial::Forward (uint16_t num)
 {
     SendCmd (0x04, num);
 }
+
 void BTSerial::Back (uint16_t num)
 {
     SendCmd (0x05, num);
 }
+
 void BTSerial::Right (uint16_t num)
 {
     SendCmd (0x06, num);
 }
+
 void BTSerial::Left (uint16_t num)
 {
     SendCmd (0x07, num);
 }
-void BTSerial::Stop ()
+
+void BTSerial::End ()
 {
     SendCmd (0x08);
+}
+
+void BTSerial::Start(){
+    SendCmd (0x09);
 }
