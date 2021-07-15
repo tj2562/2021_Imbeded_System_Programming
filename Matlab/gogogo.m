@@ -3,7 +3,7 @@
     % GOGOGO MATLAB code for gogogo.fig
     %      GOGOGO, by itself, creates a new GOGOGO or raises the existing
     %      singleton*.
-    %
+   
     %      H = GOGOGO returns the handle to a new GOGOGO or the handle to
     %      the existing singleton*.
     %
